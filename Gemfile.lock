@@ -432,9 +432,18 @@ GEM
       multi_json (~> 1.0)
       rspec (>= 2.0, < 4.0)
     jwt (2.2.2)
-    kaminari (0.17.0)
-      actionpack (>= 3.0.0)
-      activesupport (>= 3.0.0)
+    kaminari (1.2.1)
+      activesupport (>= 4.1.0)
+      kaminari-actionview (= 1.2.1)
+      kaminari-activerecord (= 1.2.1)
+      kaminari-core (= 1.2.1)
+    kaminari-actionview (1.2.1)
+      actionview
+      kaminari-core (= 1.2.1)
+    kaminari-activerecord (1.2.1)
+      activerecord
+      kaminari-core (= 1.2.1)
+    kaminari-core (1.2.1)
     kgio (2.11.3)
     knapsack (1.19.0)
       rake
@@ -443,7 +452,7 @@ GEM
     letter_opener (1.7.0)
       launchy (~> 2.2)
     libv8 (7.3.492.27.1)
-    loofah (2.7.0)
+    loofah (2.8.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
@@ -782,7 +791,7 @@ DEPENDENCIES
   json
   json_spec (~> 1.1.4)
   jwt (~> 2.2)
-  kaminari (~> 0.17.0)
+  kaminari (~> 1.2.1)
   knapsack
   letter_opener (>= 1.4.1)
   mini_racer (= 0.2.15)
